@@ -62,3 +62,151 @@
   }
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--bigger-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.section__title-gradient {
+  background: var(--text-gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/*=============== LAYOUT ===============*/
+.main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+}
+
+/* ============== Header =================*/
+
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:var(--header-height) ;
+  padding: 2rem 0;
+}
+
+.nav__logo{
+  width: 1.5rem;
+}
+
+.nav__toggle{
+  font-size: 1.4rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.nav__menu{
+  width: 100%;
+  z-index: var(--z-fixed);
+  background: var(--body-color);
+  position: fixed;
+  top: -1000%;
+  left: 0;
+  padding: 4rem 0 3rem;
+  transition: .4s;
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 0;
+}
+.nav__link{
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold) ;
+  font-size: var(--h2-font-size);
+  background: var(--text-gradient);
+  color: transparent;
+  background-clip: text;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav__link:hover{
+  color: var(--text-color-light);
+}
+.active__link{
+  color: var(--white-color);
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.7rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+

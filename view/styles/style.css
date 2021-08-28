@@ -122,6 +122,23 @@ img {
   background-clip: text;
 }
 
+.button{
+  padding: .9rem 1.3rem;
+  background: var(--scroll-thumb-color);
+  color: var(--white-color);
+  border-radius: .4rem;
+  cursor: pointer;
+  display: inline-flex;
+  column-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button:hover{
+  background: var(--black-color-alt);
+}
+
+
 /*=============== LAYOUT ===============*/
 .main {
   overflow: hidden;
@@ -269,27 +286,14 @@ img {
 .home__button{
   margin-top: var(--mb-2-5);
 }
-.button{
-  padding: .9rem 1.3rem;
-  width: 14rem;
-  background: var(--scroll-thumb-color);
-  color: var(--white-color);
-  border-radius: .4rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.button:hover{
-  background: var(--black-color-alt);
-}
 
 .button__icon{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
+  font-size: 1.3rem;
 }
+
 .icon{
   font-size:1.3rem;
 }
@@ -319,15 +323,6 @@ img {
   /* margin-top: 2rem; */
   position: relative;
 }
-.specs__title{
-  text-align: center;
-  font-size: var(--bigger-font-size);
-  background: var(--text-gradient);
-  background-clip: text;
-  color: transparent;
-  margin-bottom: var(--mb-2-5);
-}
-
 
 .specs__image{
   position: absolute;
@@ -365,6 +360,37 @@ img {
 
 
 /* ============ End of Specs Section =========== */
+
+
+
+/* ============ Case Section ================== */
+.case__section{
+  border: 1px solid ridge;
+}
+
+.case__container{
+  grid-template-columns: repeat(2 , 1fr);
+}
+
+.case__image{
+  width: 260px;
+  position: absolute;
+  left: -7rem;
+  
+}
+
+.case__content{
+  margin-top: 4rem;
+  line-height: 2rem;
+}
+
+
+.case__button{
+  margin-top: 1.5rem;
+}
+/* ============ End of Case Section =========== */
+
+
 
 
 /* ============================== End of Main =========================== */

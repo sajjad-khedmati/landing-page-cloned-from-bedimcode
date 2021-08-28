@@ -223,9 +223,6 @@ img {
 
 /* ============= Home Section =========== */
 
-.home__section{
-  height: 100vh;
-}
 
 .home__img{
   max-width: 250px;
@@ -316,6 +313,58 @@ img {
 
 /* ============= End of Home Section =========== */
 
+/* ============= Specs Section ================= */
+
+.specs__section{
+  /* margin-top: 2rem; */
+  position: relative;
+}
+.specs__title{
+  text-align: center;
+  font-size: var(--bigger-font-size);
+  background: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: var(--mb-2-5);
+}
+
+
+.specs__image{
+  position: absolute;
+  max-width: 250px;
+  top: 17rem;
+  right: -1.8rem;
+}
+
+.option__item{
+  margin: 3rem 0;
+}
+
+.option__item:nth-child(1),
+.option__item:nth-child(4){
+  margin-left: 2rem;
+}
+
+.optin__icon{
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+
+.option__title{
+  font-size: 1.1rem;
+  color: var(--white-color);
+}
+
+.option__subtitle{
+  font-size: .8rem;
+  font-weight: var(--font-medium);
+  letter-spacing: .1rem;
+  margin-top: .3rem;
+}
+
+
+
+/* ============ End of Specs Section =========== */
 
 
 /* ============================== End of Main =========================== */

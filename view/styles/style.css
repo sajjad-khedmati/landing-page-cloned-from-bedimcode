@@ -373,9 +373,9 @@ img {
 }
 
 .case__image{
-  width: 260px;
+  width: 250px;
   position: absolute;
-  left: -7rem;
+  left: -8rem;
   
 }
 
@@ -387,6 +387,30 @@ img {
 
 .case__button{
   margin-top: 1.5rem;
+}
+
+
+.case__card{
+  margin: 9rem 0;
+  padding: 2rem 1.5rem;
+  background-color: var(--container-color);
+  border-radius: .4rem;
+  position: relative;
+}
+
+.card__image{
+  width: 300px;
+  position: absolute;
+  top: 2rem;
+  right: -9rem;
+}
+
+.card__title{
+  margin-bottom: var(--mb-0-5);
+}
+
+.card__button{
+  margin-top: var(--mb-2-5);
 }
 /* ============ End of Case Section =========== */
 

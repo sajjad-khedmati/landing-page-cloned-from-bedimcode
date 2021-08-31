@@ -378,10 +378,6 @@ img {
 
 /* ============ Case Section ================== */
 
-.case__section {
-    border: 1px solid ridge;
-}
-
 .case__container {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -433,7 +429,9 @@ img {
 .product__section {
     margin-top: -5rem;
 }
-
+.product__title{
+    margin-bottom: 7rem;
+}
 .product__items {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 1.5rem;
@@ -488,30 +486,18 @@ img {
     background: var(--white-color);
 }
 
-@media only screen and (max-width:480px) {
-    .product__items {
-        grid-template-columns: 1fr;
-        gap: 5rem 1.5rem;
-    }
-    .product__item {
-        width: 100%;
-    }
-    .product__image {
-        width: 150px;
-        top: -6rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
 
 /* ============ End of Case Section =========== */
+
+
+/* ============================== End of Main =========================== */
+
 
 
 /* ============ Footer section =========== */
 
 .footer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 3rem;
 }
 
@@ -604,4 +590,166 @@ img {
 /* ============ End of Footer Section =========== */
 
 
-/* ============================== End of Main =========================== */
+
+/* ============= Responsivablity ================ */
+
+
+@media only screen and (max-width:480px) {
+    .product__items {
+        grid-template-columns: 1fr;
+        gap: 5rem 1.5rem;
+    }
+    .product__item {
+        width: 100%;
+    }
+    .product__image {
+        width: 150px;
+        top: -6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .button {
+        padding: .5rem 1rem;
+    }
+    .case__container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+    }
+    .case__image{
+        width: 200px;
+        position: initial;
+        transform: rotateZ(45deg);
+    }
+
+    .card {
+        display: grid;
+        justify-items: center;
+        row-gap: 2rem;
+
+    }
+
+    .card__image {
+        width: 250px;
+        position: initial;
+        margin-bottom: 2rem;
+        transform: rotateZ(45deg);
+    }
+
+    .card__line{
+        height: 1px;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        box-shadow: 1px 20px 4px rgba(255, 255, 255, 0.657);
+    }
+
+}
+
+
+@media  only screen and (min-width :768px) {
+
+    .nav__logo{
+        width: 2.3rem;
+    }
+
+    .nav__close , .nav__toggle{
+        display: none;
+    }
+    .nav{
+        padding: 3rem .3rem;
+    }
+    
+    .nav__menu{
+        background-color: inherit;
+        position: initial;
+        padding: 0;
+        box-shadow: none;
+        
+    }
+
+    .nav__list{
+        flex-direction: row;
+        column-gap: 2rem;
+        justify-content: flex-end;
+        background-color: inherit;
+    }
+    .nav__link{
+        font-size: 1.1rem;
+    }
+
+    .home__img{
+        position: relative;
+        left: 2rem;
+        top: -8rem;
+    }
+
+    .home__section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .specs__image{
+        right: 0;
+        top: 14rem;
+        max-width: 350px;
+    }
+
+    .case__image{
+        width: 300px;
+        left: 0;
+    }
+
+    .case__content {
+        font-size: 1.1rem;
+        margin-top: 8rem;
+    }
+    .case__card{
+        margin-top: 12rem;
+    }
+
+    .card{
+        position: relative;
+    }
+
+    .card__image {
+       position: absolute;
+       top: 4rem;
+       right: -3rem;
+    }
+
+    .card__button{
+        margin-top: 5rem;
+    }
+
+    .product__items{
+        margin-top: 9rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media  only screen and (min-width :1024px) {
+    .container{
+        margin: 0 auto;
+    }
+
+    .case__image{
+        position: initial;
+    }
+    .card__image {
+        width: 400px;
+        top: 0;
+        right: -1rem;
+    }
+    .footer{
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+
+/* =============================================== */
